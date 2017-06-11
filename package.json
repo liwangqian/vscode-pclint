@@ -1,0 +1,57 @@
+{
+	"name": "vscode-pclint",
+	"description": "PCLint For Vscode.",
+	"author": "liwangqian87@163.com",
+	"license": "MIT",
+	"version": "0.1.0",
+	"publisher": "liwangqian",
+	"engines": {
+		"vscode": "^1.4.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/liwangqian/vscode-pclint"
+	},
+	"bugs": {
+		"url": "https://github.com/liwangqian/vscode-pclint/issues"
+	},
+	"activationEvents": [
+		"onLanguage:c",
+		"onLanguage:cpp"
+	],
+	"main": "./client/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "PCLint configuration",
+			"properties": {
+				"pclint.lintFilePath": {
+					"type":"string",
+					"default":"",
+					"description": "path of the lint file."
+				}
+			}
+		}
+	},
+	"devDependencies": {
+		"typescript": "^2.1.4",
+		"vscode": "^1.0.3",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^2.6.0",
+		"vscode-jsonrpc": "^3.2.0",
+		"vscode-languageserver-types": "^3.2.0"
+	},
+	"__metadata": {
+		"id": "8466515a-a036-406e-b1e5-a04c7c81453d",
+		"publisherId": "3a9ea834-08ae-40c0-851d-fafcef353e86",
+		"publisherDisplayName": "liwangqian"
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "name": "vscode-pclint-server",
+  "description": "language server for vscode-pclint.",
+  "version": "0.1.0",
+  "author": "liwangqian87@163.com",
+  "license": "GPL",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "vscode-languageserver": "^2.6.0",
+    "vscode-uri": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.4"
+  }
+}
